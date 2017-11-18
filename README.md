@@ -1,5 +1,4 @@
 # Starter-Kit Rainbow SDK for Node.JS
-===
 
 Welcome to the Alcatel-Lucent Enterprise **Starter-Kit Rainbow SDK for Node.JS**!
 
@@ -7,7 +6,6 @@ The Alcatel-Lucent Enterprise (ALE) Starter-Kit Rainbow SDK for Node.JS is a bas
 
 
 ## Preamble
---
 
 You need a Node.JS LTS release installed on your computer.
 
@@ -15,7 +13,6 @@ You need a Rainbow account. Connect to the [Rainbow HUB](https://hub.openrainbow
 
 
 ## Installation
----
 
 Clone this repository in the directory you want and then open a shell and executes the following command
 
@@ -26,7 +23,6 @@ $ npm install
 ```
 
 ## Content
----
 
 This Starter-Kit is a Node.JS application that:
 
@@ -36,7 +32,6 @@ This Starter-Kit is a Node.JS application that:
 
 
 ## Setup
----
 
 In order to setup your application, you have to configure 2 JSON files:
 
@@ -53,7 +48,6 @@ $ node index.js
 ```
 
 ## Server API
----
 
 Your Node.JS contains an embedded server with 2 default routes:
 
@@ -63,15 +57,12 @@ Your Node.JS contains an embedded server with 2 default routes:
 
 
 ## Environment
----
 
 ### ESLint
----
 
 Todo
 
 ### Unit Tests
----
 
 Todo
 
