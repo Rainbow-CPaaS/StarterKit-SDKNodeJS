@@ -4,8 +4,8 @@
         "mode": "xmpp"
     },
     "credentials": {
-        "login": "<your_account>",
-        "password": "<you_password>"
+        "login": "<your account>",
+        "password": "<your password>"
     },
     "logs": {
         "enableConsoleLogs": true,

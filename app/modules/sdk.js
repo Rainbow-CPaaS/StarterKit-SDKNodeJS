@@ -9,13 +9,17 @@ class SDK {
     
     constructor() {
         logger.log("debug", LOG_ID + "constructor()");
+        this.nodeSDK = null;
     }
 
     start(bot) {
-        // Start the SDK
-        this.nodeSDK = new NodeSDK(bot);
-        this.nodeSDK.start().then(() => {
-            logger.log("debug", LOG_ID + "SDK started");
+        return new Promise((resolve) => {
+             // Start the SDK
+            this.nodeSDK = new NodeSDK(bot);
+            this.nodeSDK.start().then(() => {
+                logger.log("debug", LOG_ID + "SDK started");
+                resolve();
+            });
         });
     }
 
@@ -31,6 +35,18 @@ class SDK {
                 reject(err);
             });
         });
+    }
+
+    get state() {
+        return this.nodeSDK.state;
+    }
+
+    get version() {
+        return this.nodeSDK.version;
+    }
+
+    get sdk() {
+        return this.nodeSDK;
     }
 }
 

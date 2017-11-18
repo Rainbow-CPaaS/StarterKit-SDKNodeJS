@@ -49,21 +49,61 @@ $ node index.js
 
 ## Server API
 
-Your Node.JS contains an embedded server with 2 default routes:
+Your Node.JS contains an embedded server with 3 default routes:
 
-- `GET botsample/ping`: This API allows to monitor your Node.JS application
+- `GET botsample/ping`: API for having an health check of your application
 
-- `POST botsample/restart`: This API allows to restart the SDK for Node.JS (stop and start).
+- `POST botsample/sdk/restart`: API for restarting the SDK for Node.JS (stop and start).
 
+- `GET botsample/sdk/status`: API for having a status of the SDK for Node.JS
+
+You can test these routes using CURL. Here is an example of testing the `botsample/ping` route when the Web Server is launched using `HTTP` and port `3002`:
+
+```bash
+
+$ curl -X GET http://localhost:3002/botsample/ping
+> {"code":0}
+
+```
+
+Note: When testing in HTTPS, default self-signed certificates are proposed. For testing with CURL, you have to add the parameter `-k` to avoid the CURL's verification like as follows (launched with `HTTPS` and port `3003`):
+
+```bash
+$ curl -X GET https://localhost:3003/botsample/ping -k
+> {"code":0}
+
+```
 
 ## Environment
 
 ### ESLint
 
-Todo
+Basic rules for Node.JS JavaScript development have been added.
 
 ### Unit Tests
 
-Todo
+Tests have to be added in directory `test`.
+
+to launch the test, open a sheel and execute the following command:
+
+```bash
+
+$ npm test
+
+```
+
+Each time a file is modified, the tests are executed.
+
+If you want to check the code coverage, launch the following command:
+
+```bash
+
+$ npm run coverage
+
+```
+
+### Modules
+
+New modules can be added to your application in directory `app`.
 
 
