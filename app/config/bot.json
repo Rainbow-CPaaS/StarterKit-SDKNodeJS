@@ -1,0 +1,21 @@
+{
+    "rainbow": {
+        "host": "sandbox.openrainbow.com",
+        "mode": "xmpp"
+    },
+    "credentials": {
+        "login": "rford@westworld.com",
+        "password": "Password_123"
+    },
+    "logs": {
+        "enableConsoleLogs": true,
+        "enableFileLogs": false,
+        "file": {
+            "path": "/var/tmp/rainbowsdk/",
+            "level": "debug"
+        }
+    },
+    "im": {
+        "sendReadReceipt": false
+    }
+}

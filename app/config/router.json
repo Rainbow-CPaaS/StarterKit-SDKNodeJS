@@ -1,0 +1,8 @@
+{
+    "port": 3002,
+    "protocol": "http",
+    "certificates": {
+        "key": "./app/certificates/key.pem",
+        "cert": "./app/certificates/cert.pem"
+    }
+}
