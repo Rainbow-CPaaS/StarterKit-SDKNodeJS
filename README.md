@@ -37,7 +37,7 @@ In order to setup your application, you have to configure 2 JSON files:
 
 - `app/config/bot.json`: This file contains your SDK for Node.JS parameter. Modify it with your Rainbow account.
 
-- `app/config/router.json`: This file contains the default parameter for the embedded web server.
+- `app/config/router.json`: This file contains the default parameter for the embedded web server. Modify it according to your need.
 
 Once you have configured these two files, you can start the application by launching the following command:
 
@@ -46,16 +46,6 @@ Once you have configured these two files, you can start the application by launc
 $ node index.js
 
 ```
-
-You can force the protocol and the port use directly from the command line:
-
-```bash
-
-$ node index.js https 3003
-
-```
-
-This will start your web server using `HTTPS` on port `3003`.
 
 
 ## Server API
