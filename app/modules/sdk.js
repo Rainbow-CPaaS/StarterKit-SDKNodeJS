@@ -16,6 +16,19 @@ class SDK {
         return new Promise((resolve) => {
              // Start the SDK
             this.nodeSDK = new NodeSDK(bot);
+
+            this.nodeSDK.events.on('rainbow_onmessagereceived', (message) => {
+                // send manually a 'read' receipt to the sender
+                this.nodeSDK.im.markMessageAsRead(message);
+
+                // send an answer
+                if(message.type === "chat") {
+                    this.nodeSDK.im.sendMessageToJid("ok", message.fromJid);
+                } else if (message.type === "groupchat") {
+                    this.nodeSDK.im.sendMessageToBubbleJid("ok", message.fromBubbleJid);
+                }
+            });
+
             this.nodeSDK.start().then(() => {
                 logger.log("debug", LOG_ID + "SDK started");
                 resolve();

@@ -2,7 +2,7 @@
 
 Welcome to the Alcatel-Lucent Enterprise **Starter-Kit Rainbow SDK for Node.JS**!
 
-The Alcatel-Lucent Enterprise (ALE) Starter-Kit Rainbow SDK for Node.JS is a basic sample for starting you development using the SDK for Node.JS in an easy way but within an advanced environment.
+The Alcatel-Lucent Enterprise (ALE) Starter-Kit Rainbow SDK for Node.JS is a basic sample for starting your development using the SDK for Node.JS in an easy way and within an advanced environment.
 
 
 ## Preamble
@@ -26,7 +26,7 @@ $ npm install
 
 This Starter-Kit is a Node.JS application that:
 
-- Starts the SDK for Node.JS and connect it to Rainbow
+- Starts the SDK for Node.JS, connects it to Rainbow and answers to incoming chat messages
 
 - Starts a web server for monitoring your application
 
@@ -47,15 +47,26 @@ $ node index.js
 
 ```
 
+You can force the protocol and the port use directly from the command line:
+
+```bash
+
+$ node index.js https 3003
+
+```
+
+This will start your web server using `HTTPS` on port `3003`.
+
+
 ## Server API
 
 Your Node.JS contains an embedded server with 3 default routes:
 
-- `GET botsample/ping`: API for having an health check of your application
+- `GET .../botsample/ping`: API for having an health check of your application
 
-- `POST botsample/sdk/restart`: API for restarting the SDK for Node.JS (stop and start).
+- `POST .../botsample/sdk/restart`: API for restarting the SDK for Node.JS (stop and start).
 
-- `GET botsample/sdk/status`: API for having a status of the SDK for Node.JS
+- `GET .../botsample/sdk/status`: API for having a status of the SDK for Node.JS
 
 You can test these routes using CURL. Here is an example of testing the `botsample/ping` route when the Web Server is launched using `HTTP` and port `3002`:
 
@@ -73,6 +84,7 @@ $ curl -X GET https://localhost:3003/botsample/ping -k
 > {"code":0}
 
 ```
+
 
 ## Environment
 
