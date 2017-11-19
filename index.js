@@ -12,7 +12,7 @@ const defaultServer = require("./app/config/router.json");
 const LOG_ID = "STARTER/INDX - ";
 
 // Start the SDK
-sdk.start(bot).then(() => {
+sdk.start(bot, process.argv).then(() => {
     // Start the router
     return router.start(process.argv, defaultServer, sdk);
 }).then(() => {

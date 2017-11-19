@@ -12,8 +12,15 @@ class SDK {
         this.nodeSDK = null;
     }
 
-    start(bot) {
+    start(bot, argv) {
         return new Promise((resolve) => {
+
+            if(argv.length >= 4) {
+                bot.credentials.login = argv[2];
+                bot.credentials.password = argv[3];
+                logger.log("info", LOG_ID + "using " + bot.credentials.login  + " (forced by CLI)");
+            }
+
              // Start the SDK
             this.nodeSDK = new NodeSDK(bot);
 

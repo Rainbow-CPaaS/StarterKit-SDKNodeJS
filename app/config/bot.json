@@ -4,8 +4,8 @@
         "mode": "xmpp"
     },
     "credentials": {
-        "login": "rford@westworld.com",
-        "password": "Password_123"
+        "login": "",
+        "password": ""
     },
     "logs": {
         "enableConsoleLogs": true,

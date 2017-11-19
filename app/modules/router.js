@@ -27,9 +27,9 @@ class Router {
             this.port = config.port;
             this.sdk = sdk;
     
-            if(argv.length === 4) {
-                this.protocol = argv[2];
-                this.port = argv[3];
+            if(argv.length === 6) {
+                this.protocol = argv[4];
+                this.port = argv[5];
                 logger.log("info", LOG_ID + "serving " + this.protocol + " requests on port " + this.port + " (forced by CLI)");
             } else {
                 logger.log("info", LOG_ID + "serving " + this.protocol + " requests on port " + this.port);
