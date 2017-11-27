@@ -13,7 +13,7 @@
   "dependencies": {
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "rainbow-node-sdk": "^1.32.0",
+    "rainbow-node-sdk": "^1.33.1",
     "winston": "^2.4.0"
   },
   "devDependencies": {
