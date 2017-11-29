@@ -118,13 +118,13 @@ After Docker installation ( See [Docker](https://www.docker.com/community-editio
 docker build -t rainbow-api-hub/startkit-sdk-nodejs .
 ```
 
-3 environments variable are required to run a container instance with the previous builded image:
+3 environment variables are required to run a container instance with the previous builded image:
 
-> RAINBOW_BOT_LOGIN (_mandatory_): User email associated to your bot.
->
-> RAINBOW_BOT_PASSWORD (_mandatory_): User password associated to your bot.
->
-> RAINBOW_HOST (_optional_, default value: sandbox.openrainbow.com ): Target host where your want to  run your bot.
+- `RAINBOW_BOT_LOGIN` (_mandatory_): User email associated to your bot.
+
+- `RAINBOW_BOT_PASSWORD` (_mandatory_): User password associated to your bot.
+
+- `RAINBOW_HOST` (_optional_, default value: sandbox.openrainbow.com ): Target host where your want to  run your bot.
 
 
 Use the following command in order to start you container instance, with the port 8888 as REST api entry point port
