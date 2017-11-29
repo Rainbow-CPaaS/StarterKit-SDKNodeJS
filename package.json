@@ -6,10 +6,15 @@
   "scripts": {
     "test": "mocha test/ -w",
     "coverage": "nyc --reporter=text mocha",
-    "build": ""
+    "build": "",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rainbow-CPaaS/StarterKit-SDKNodeJS.git"
   },
   "author": "AL-Enterprise <support@openrainbow.com>",
-  "license": "AL-Enterprise",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.4",
     "express": "^4.16.2",

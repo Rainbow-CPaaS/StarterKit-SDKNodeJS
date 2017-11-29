@@ -108,4 +108,27 @@ $ npm run coverage
 
 New modules can be added to your application in directory `app`.
 
+## Docker container usage
 
+Thanks to Dockerfile available a root directory, you are able to run the current Starter Kit into Docker.
+
+After Docker installation ( See [Docker](https://www.docker.com/community-edition) ), run the following commandto build your own image.
+
+```
+docker build -t rainbow-api-hub/startkit-sdk-nodejs .
+```
+
+3 environments variable are required to run a container instance with the previous builded image:
+
+> RAINBOW_BOT_LOGIN (_mandatory_): User email associated to your bot.
+>
+> RAINBOW_BOT_PASSWORD (_mandatory_): User password associated to your bot.
+>
+> RAINBOW_HOST (_optional_, default value: sandbox.openrainbow.com ): Target host where your want to  run your bot.
+
+
+Use the following command in order to start you container instance, with the port 8888 as REST api entry point port
+
+```
+docker run -p 8888:8080 -e RAINBOW_BOT_LOGIN=<BOT_EMAIL> -e RAINBOW_BOT_PASSWORD=<BOT_PWD> -t rainbow-api-hub/startkit-sdk-nodejs
+```
