@@ -1,7 +1,7 @@
 {
-  "name": "botsample",
-  "version": "1.37.0",
-  "description": "Starter-Kit for Bot",
+  "name": "rainbow-node-starterkit",
+  "version": "1.37.1",
+  "description": "Rainbow starter-Kit for Node.JS",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/ -w",
