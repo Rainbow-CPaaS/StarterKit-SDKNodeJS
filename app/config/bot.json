@@ -15,6 +15,10 @@
             "level": "debug"
         }
     },
+    "application": {
+        "appID": "",
+        "appSecret": ""
+    },
     "im": {
         "sendReadReceipt": false
     }
