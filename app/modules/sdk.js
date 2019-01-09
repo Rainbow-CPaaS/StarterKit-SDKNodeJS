@@ -45,7 +45,7 @@ class SDK {
 
     restart() {
         return new Promise((resolve, reject) => {
-            this.nodeSDK.events.on('rainbow_onstopped', (data) => {
+            this.nodeSDK.events.once('rainbow_onstopped', (data) => {
                 logger.log("debug", LOG_ID + "SDK - rainbow_onstopped - rainbow event received. data", data);
 
                 logger.log("debug",  LOG_ID + "SDK - rainbow_onstopped rainbow SDK will re start");
