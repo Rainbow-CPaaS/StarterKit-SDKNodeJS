@@ -16,9 +16,10 @@
   "author": "AL-Enterprise <support@openrainbow.com>",
   "license": "MIT",
   "dependencies": {
+    "comment-json": "^1.1.3",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "rainbow-node-sdk": "^1.37.0",
+    "rainbow-node-sdk": "^1.50.0",
     "winston": "^2.4.0"
   },
   "devDependencies": {

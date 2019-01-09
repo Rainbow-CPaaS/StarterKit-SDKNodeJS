@@ -1,25 +1,47 @@
 {
     "rainbow": {
-        "host": "sandbox.openrainbow.com",
-        "mode": "xmpp"
+        //        "host": "official",                      // Can be "sandbox" (developer platform), "official" or any other hostname when using dedicated AIO
+                "host": "sandbox"                      // Can be "sandbox" (developer platform), "official" or any other hostname when using dedicated AIO
     },
     "credentials": {
-        "login": "",
-        "password": ""
+        "login": "xxx@xxx.xxx",  // The Rainbow email account to use
+        "password": "xxx"   // The Rainbow associated password to use
     },
+    // Application identifier
+
+    "application": {
+        "appID": "91...93", // Need to create your own application on the hub.openrainbow.com platform
+        "appSecret": "2ML...1m"
+    },
+    // */
+
+    // Proxy configuration
+    /*"proxy": {
+        "host": "xx.xx.xx.xx",
+        "port": 8080,
+        "protocol": "http"
+    }, // */
+
+    // Logs options
     "logs": {
-        "enableConsoleLogs": true,
-        "enableFileLogs": false,
+        "enableConsoleLogs": true,              // Default: true
+        "enableFileLogs": false,                // Default: false
+        "color": true,
+        "level": "info",
+        "customLabel": "StarterKit",
+        "system-dev": {
+            "internals": false,
+            "http": false
+        }, // */
         "file": {
-            "path": "/var/tmp/rainbowsdk/",
-            "level": "debug"
+            "path": "c:/temp/",     // Default path used
+            "customFileName": "R-SDK-Node-StarterKit",
+            //"level": 'info',                    // Default log level used
+            "zippedArchive" : false
         }
     },
-    "application": {
-        "appID": "",
-        "appSecret": ""
-    },
+    // IM options
     "im": {
-        "sendReadReceipt": false
+        "sendReadReceipt": false   // True to send the 'read' receipt automatically
     }
 }
