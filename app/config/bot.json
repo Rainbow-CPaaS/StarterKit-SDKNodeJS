@@ -4,8 +4,8 @@
                 "host": "sandbox"                      // Can be "sandbox" (developer platform), "official" or any other hostname when using dedicated AIO
     },
     "credentials": {
-        "login": "xxx@xxx.xxx",  // The Rainbow email account to use
-        "password": "xxx"   // The Rainbow associated password to use
+        "login": "",  // The Rainbow email account to use
+        "password": ""   // The Rainbow associated password to use
     },
     // Application identifier
 
