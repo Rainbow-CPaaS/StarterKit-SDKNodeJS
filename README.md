@@ -22,14 +22,6 @@ $ npm install
 
 ```
 
-You can install directly the package using `npm` command:
-
-```bash
-
-$ npm install rainbow-node-starterkit
-
-```
-
 ## Content
 
 This Starter-Kit is a Node.JS application that:
