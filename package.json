@@ -1,6 +1,6 @@
 {
   "name": "rainbow-node-starterkit",
-  "version": "1.37.1",
+  "version": "1.38.0",
   "description": "Rainbow starter-Kit for Node.JS",
   "main": "index.js",
   "scripts": {
